@@ -4,12 +4,12 @@ class MyThread extends Thread
 	{
 		for(int i=0;i<10;i++)
 		{
-			system.out.println("i = "+i+"\n");
+			System.out.println("i = "+i+"\n");
 		}
 	}
 }
 
-class ThreadDemo1
+public class ThreadDemo1
 {
 	public static void main(String args[])
 	{
@@ -17,7 +17,7 @@ class ThreadDemo1
 		t.start();
 		for(int j=0;j<10;j++)
 		{
-			system.out.println("j = "+j+"\n");
+			System.out.println("j = "+j+"\n");
 		}
 	}
 }
