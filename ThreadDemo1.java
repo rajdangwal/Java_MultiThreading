@@ -9,7 +9,7 @@ class MyThread extends Thread
         super.start();//This start is in Thread class. Creates new thread and calls run().
         System.out.println(Thread.currentThread().getName()+" : My start is running now.");//This will be executed by calling thread not the newly created thread.
     }
-    public void run()//This will be executed by newly created thread.
+    public void run()//This will be executed by newly created thread. If we don't define it run() method of Thread class overriden from Runnable interface will be executed.
     {
         run(5);
         for(int i=0;i<10;i++)
