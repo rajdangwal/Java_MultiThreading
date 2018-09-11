@@ -8,3 +8,16 @@ class MyThread extends Thread
 		}
 	}
 }
+
+class ThreadDemo 
+{
+	public static void main(String args[])
+	{
+		MyThread t = new MyThread();
+		t.start();
+		for(int j=0;j<10;j++)
+		{
+			system.out.println("j = "+j+"\n");
+		}
+	}
+}
