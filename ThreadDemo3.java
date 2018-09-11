@@ -9,6 +9,14 @@ class MyThread3 extends Thread
         for(int i=0;i<10;i++)
         {
             System.out.println("Child Thread\n");
+            try
+            {
+                Thread.sleep(1000);
+            }
+            catch(InterruptedException e)
+            {
+                System.out.println("Error Occoured.");
+            }
         }
     }
 }
