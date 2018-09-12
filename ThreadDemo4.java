@@ -6,11 +6,6 @@
 class MyThread4 extends Thread
 {
     public static Thread mainThread;
-    public void start()
-    {
-        mainThread = Thread.currentThread();
-        super.start();
-    }
     public void run()
     {
         System.out.println("Child thread waiting for the parent thread to finish.");
@@ -30,6 +25,7 @@ public class ThreadDemo4
 {
     public static void main(String args[])
     {
+        MyThread4.mainThread = Thread.currentThread();
         MyThread4 t = new MyThread4();
         t.start();
         
